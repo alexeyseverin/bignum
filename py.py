@@ -21,7 +21,6 @@ def GCD_Ex(a,b):
         x1=xx
         y2=y1
         y1=yy
-
     return x2,y2
 
 a=l.Long("n1.txt")
