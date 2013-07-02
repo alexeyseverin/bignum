@@ -1,0 +1,44 @@
+import sys
+print("Input A and B. B>1.")
+a=input("A = ")
+b=input("B = ")
+if (b<=1):
+  print("Wrong numbers, dude! See description.")
+	sys.exit()
+if(b%2==0):
+	print "No answer"
+	sys.exit()
+i=3
+bb=b/2
+while i<bb:
+	if(b%i==0):
+		print "No answer"
+		sys.exit()
+	i=i+2
+r=1
+t=0
+c=0
+if(b==1):
+	r=1
+	print "Answer: " + str(r)
+	ssys.exit()
+if(a<0):
+	a=-a
+	if(b%4==3):
+		r=-r
+while 1:
+	t=0
+	while(a%2==0):
+		t=t+1
+		a=a/2
+	if(t%2!=0):
+		if((b%8==3) or (b%8==5)):
+			r=-r
+	if((a%4==3) and (b%4==3)):
+		r=-r
+	c=a
+	a=b%c
+	b=c
+	if(a==0):
+		break
+print "Answer: " + str(r)
